@@ -12,3 +12,7 @@ def gold_analysis():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+@app.route('/projects/gold_price')
+def gold_price():
+    return render_template('projects/gold_price.html')
